@@ -1,0 +1,148 @@
+.header {
+
+}
+
+.header__top {
+  border-bottom: 1px solid $color2;
+  @media(max-width: 900px){
+    display: none;
+  }
+  .header__top__container {
+    max-width: 1364px;
+    margin: 0.3% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 1vw;
+      @media(max-width: 1100px){
+        gap: 7px;
+      }
+      .header__contacts__address,
+      .header__contacts__email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vw;
+      }
+    }
+
+    .header__about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3vw;
+      @media(max-width: 1100px){
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.header__bottom {
+  border-bottom: 1px solid $color2;
+  @media(max-width: 900px){
+    display: none;
+  }
+  .header__bottom__container {
+    max-width: 1364px;
+    margin: 0.3% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__catalog {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1vw;
+
+    }
+
+    .header__contactus {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1vw;
+
+      .contactus__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        text-align: end;
+
+        h3 {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          color: $color1;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 150%;
+          color: $color2;
+        }
+
+        button {
+          background: transparent;
+          color: $color2;
+
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 150%;
+          text-align: end;
+
+          span {
+            border-bottom: 1px solid $color1;
+          }
+
+        }
+      }
+
+      .contactus_img{
+        @media(max-width: 1000px){
+          display: none;
+        }
+      }
+    }
+
+
+    .header__cart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.75vw;
+
+
+
+      .cart__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vh;
+
+        p {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 150%;
+          color: $color2;
+        }
+
+        h3 {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 150%;
+          color: $color1;
+        }
+      }
+
+    }
+  }
+}

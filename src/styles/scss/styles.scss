@@ -1,0 +1,259 @@
+@import "nullStyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+$color1: #111111;
+$color2: #3F4E65;
+$color3: linear-gradient(180deg, #6CD0E9 14.1%, #6CADE9 57.69%);
+$color5: #FFC85E;
+$color6: #FFC85E;
+
+body {
+  font-family: "Inter";
+
+}
+.body_container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .main {
+    flex: 1 1 auto;
+    padding-bottom: 20px;
+  }
+}
+
+.yellow__button {
+  width: 192px;
+  height: 60px;
+  @media(max-width: 1200px){
+    width: 130px;
+    height: 60px;
+  }
+  border-radius: 40px;
+  background: $color6;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+}
+
+.search__btn {
+  background: $color6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.search__input {
+  width: 265px;
+  height: 60px;
+  @media(max-width: 1200px){
+    max-width: 220px;
+    max-height: 60px;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  background: #EDEDED;
+  padding: 3%;
+
+  input {
+    background: transparent;
+    font-size: 12px;
+  }
+}
+
+.header__cart__btn {
+  color: $color2;
+  position: relative;
+  z-index: 0;
+}
+
+.header__price_button {
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+  .header__anchor {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color2;
+    @media(max-width: 965px){
+      font-size: 12px;
+    }
+    @media(max-width: 900px){
+      font-size: 14px;
+    }
+  }
+  .header__role {
+    background-color: $color6;
+    width: 150px;
+    height: 45px;
+    @media(max-width: 965px){
+      width: 120px;
+    }
+    @media(max-width: 900px){
+      width: 150px;
+    }
+    line-height: 120%;
+    border-radius: 40px;
+  }
+
+
+.cart__count__background_white {
+  position: absolute;
+  background: white;
+  z-index: 1;
+  top: -15%;
+  left: 60%;
+  width: 19px;
+  height: 19px;
+}
+
+.cart__count {
+  position: absolute;
+  background: $color6;
+  color: #fff;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  top: -12.5%;
+  left: 62.5%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  z-index: 2;
+}
+
+.nav {
+  padding: 2vw 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+
+  .nav_link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    color: $color2;
+    padding-right: 10px;
+    border-right: 1px dashed #3F4E65;
+  }
+  .active{
+    border-right: none;
+    color: $color1;
+  }
+}
+
+
+.product__size {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: $color2;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5%;
+}
+
+.product__count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  .product__count__btn {
+    width: 34px;
+    height: 23px;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color2;
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+  }
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: $color2;
+  }
+}
+
+.product__price {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 130%;
+  color: $color1;
+  @media(max-width: 1200px){
+    font-size: 28px;
+  }
+  @media (max-width: 1000px){
+    font-size: 26px;
+  }
+  @media (max-width: 800px){
+    font-size: 24px;
+  }
+  @media (max-width: 700px){
+    font-size: 22px;
+  }
+  @media (max-width: 550px){
+    font-size: 20px;
+  }
+  @media (max-width: 450px){
+    font-size: 18px;
+  }
+  @media (max-width: 320px){
+    font-size: 16px;
+  }
+}
+
+
+
+
+.header__text {
+  @media(max-width: 900px){
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130.02%;
+    color: $color1;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130.02%;
+    color: $color2;
+  }
+
+}
+
+.none{
+  display: none;
+}
+
+@import "modal";
+@import "header.scss";
+@import "headerBurger.scss";
+@import "catalog.scss";
+@import "productPage.scss";
+@import "cart.scss";
+@import "footer.scss";

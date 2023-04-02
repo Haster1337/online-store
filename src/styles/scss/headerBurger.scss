@@ -1,0 +1,145 @@
+.header__burger {
+  @media(min-width: 900px) {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+
+
+  .header__burger__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 2% 0 2%;
+    .burger__btn {
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      background: $color5;
+      border-radius: 50%;
+      color: #fff;
+    }
+  }
+
+  .header__burger__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding-bottom: 2%;
+    border-bottom: 1px solid $color2;
+    margin: 3%;
+    .burger_catalog__button {
+      padding-right: 5vw;
+      background: #fff;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: $color2;
+      border-right: 1px dashed $color2;
+    }
+
+    .burger__search {
+      background: #fff;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 1vw;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: $color2;
+
+      button {
+        background: #fff;
+      }
+
+      input {
+        width: 38px;
+      }
+    }
+  }
+
+  .header__burger__open {
+    border-bottom: 1px solid $color2;
+    .header__burger__content {
+      margin: 3%;
+      position: relative;
+      z-index: 3;
+      .burger__top {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        padding-bottom: 2%;
+        border-bottom: 1px dashed $color2;
+
+        .burger__info {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+          align-items: center;
+
+          background: #fff;
+          .burger__sells{
+              display: flex;
+              flex-direction: column;
+              gap: 5px
+          }
+        }
+
+        .burger__call {
+          button {
+            background: #fff;
+          }
+
+          button:first-child {
+            width: 30px;
+            height: 30px;
+            background: $color5;
+            border-radius: 50%;
+            text-align: center;
+          }
+
+          button:last-child {
+            text-decoration-line: underline;
+          }
+        }
+
+      }
+    }
+  }
+
+  .burger__bottom {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .burger__about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      .header__role {
+        height: 30px;
+      }
+    }
+
+  }
+
+  .blur{
+    width: 100vw;
+    height: 1500px;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(1px);
+  }
+
+  .header__burger__none {
+    display: none;
+  }
+}
