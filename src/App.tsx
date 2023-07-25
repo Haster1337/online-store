@@ -115,15 +115,15 @@ const App: React.FC = () => {
             <BrowserRouter>
                 <Header products={parsedProducts}/>
                 <Routes>
-                    <Route path="/online-store" element={<Catalog
+                    <Route path="/online_store" element={<Catalog
                         products={parsedProducts}
                         addInCart={addInCartHandler}
                         deleteProduct={deleteProductFromCartHandler}
                     />}/>
-                    <Route path="/online-store/catalog/:productCode"
+                    <Route path="/online_store/catalog/:productCode"
                            element={<ProductPage products={products} changeProductCount={changeProductCountHandler}
                                                  addInCart={addInCartHandler}/>}/>
-                    <Route path="/online-store/cart"
+                    <Route path="/online_store/cart"
                            element={<Cart products={parsedProducts} changeProductCount={changeProductCountHandler}
                                           deleteFromCart={deleteFromCartHandler} clearCart={clearCartHandler}/>}/>
                 </Routes>

@@ -21,7 +21,7 @@ const HeaderBottom: React.FC<HeaderBottomProps> = ({cartProducts, count}) => {
     return (
         <div className="header__bottom">
             <div className="header__bottom__container">
-                <NavLink className="header__logo" to="/online-store">
+                <NavLink className="header__logo" to="/online_store">
                     <img src={require("../../assets/logo.png")} alt="logo"/>
                 </NavLink>
                 <div className="header__catalog">
@@ -53,7 +53,7 @@ const HeaderBottom: React.FC<HeaderBottomProps> = ({cartProducts, count}) => {
                     </button>
                 </div>
                 <div className="header__cart">
-                    <NavLink to="/online-store/cart" className="header__cart__btn">
+                    <NavLink to="/online_store/cart" className="header__cart__btn">
                         <Icon icon="gg:shopping-cart" width="40px" height="28px"/>
                         <div className="cart__count">
                             {count}
