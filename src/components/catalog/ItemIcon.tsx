@@ -27,7 +27,7 @@ const ItemIcon: React.FC<ItemProps> = ({item, addInCart, deleteProduct}) => {
                         <Icon icon="fa-solid:box-open"/>}
                     {item.size}
                 </p>
-                <NavLink to={`/online_store/catalog/${item.code}`} className="item_name">
+                <NavLink to={`/online-store/catalog/${item.code}`} className="item_name">
                     {item.name}
                 </NavLink>
             </div>
